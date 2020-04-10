@@ -1,0 +1,16 @@
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Product Sans';
+    background-color: steelblue;
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    padding-top: 20px;
+}
+
+p {
+    font-family: 'American Typewriter';
+    font-size: 20px;
+    font-weight: bold;
+}

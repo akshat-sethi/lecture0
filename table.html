@@ -2,32 +2,59 @@
 <html>
     <head>
         <title>
-            Lists!
+            Lists and forms!
         </title>
+        <style>
+            h1 {
+                color: firebrick;
+            }
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+            th {
+                background-color: firebrick;
+            }
+            #team {
+                text-align: left;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        <h1>F1 2019 Champioship</h1>
+        <h1>F1 2019 Championship</h1>
         <table>
             <tr>
-                <th>Team Name</th>
+                <div id="team">
+                    <th><span class="name">Team Name</span></th>
+                </div>
                 <th>Constructor's Position</th>
                 <th>Car Model</th>
             </tr>
             <tr>
-                <td>Mercedes-AMG Petronas Motorsports</td>
+                <td><span class="name">Mercedes-AMG Petronas Motorsports</span></td>
                 <td>1st</td>
                 <td>W10</td>
             </tr>
             <tr>
-                <td>Scuderia Ferrari Mission Winnow</td>
+                <td><span class="name">Scuderia Ferrari Mission Winnow</span></td>
                 <td>2nd</td>
                 <td>SF90</td>
             </tr>
             <tr>
-                <td>Aston Martin RedBull Racing</td>
+                <td><span class="name">Aston Martin RedBull Racing</span></td>
                 <td>3rd</td>
                 <td>RB15</td>
             </tr>
         </table>
+        <form>
+            <input type = "text" placeholder = "Favourite F1 Team" name = "team">
+            <button>Submit!</button>
+        </form>
     </body>
 </html>
